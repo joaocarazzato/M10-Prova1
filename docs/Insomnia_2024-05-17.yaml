@@ -1,0 +1,208 @@
+_type: export
+__export_format: 4
+__export_date: 2024-05-17T13:16:26.142Z
+__export_source: insomnia.desktop.app:v8.6.1
+resources:
+  - _id: req_8b4161b9593a4268a4f44e663f5453d2
+    parentId: wrk_784b161e1f2a4428b63f15bc7e148621
+    modified: 1715950913156
+    created: 1715950089484
+    url: "{{baseUrl}}/pedidos"
+    name: GET all pedidos
+    description: ""
+    method: GET
+    body: {}
+    parameters:
+      - id: pair_a93ea486c85e411aa8fd9aadf2a5f531
+        name: ""
+        value: ""
+        description: ""
+    headers:
+      - name: User-Agent
+        value: insomnia/8.6.1
+    authentication: {}
+    metaSortKey: -1713638379394
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: wrk_784b161e1f2a4428b63f15bc7e148621
+    parentId: null
+    modified: 1715950095986
+    created: 1715950089482
+    name: API Prova
+    description: ""
+    scope: collection
+    _type: workspace
+  - _id: req_78ed3683c2434695bc8e111a02c9b21f
+    parentId: wrk_784b161e1f2a4428b63f15bc7e148621
+    modified: 1715950917345
+    created: 1715950089486
+    url: "{{ _.baseUrl }}/pedidos"
+    name: CREATE pedido
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"username": "Murilo",
+        	"usermail": "Murilo@sou.inteli.edu.br",
+        	"request_pedido": "Me traga frutas"
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/8.6.1
+    authentication: {}
+    metaSortKey: -1713638379294
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_baad04de6ff7452283b2cfafeec1bc33
+    parentId: wrk_784b161e1f2a4428b63f15bc7e148621
+    modified: 1715951038343
+    created: 1715950089484
+    url: "{{ _.baseUrl }}/pedidos/:id"
+    name: GET pedido by ID
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers:
+      - name: User-Agent
+        value: insomnia/8.6.1
+    authentication: {}
+    metaSortKey: -1713638350922.5
+    isPrivate: false
+    pathParameters:
+      - name: id
+        value: "1"
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_a3f01451b14145019a7801e5f941f4ed
+    parentId: wrk_784b161e1f2a4428b63f15bc7e148621
+    modified: 1715951058483
+    created: 1715950089485
+    url: "{{ _.baseUrl }}/pedidos/:id"
+    name: UPDATE pedido by ID
+    description: ""
+    method: PUT
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"username": "Murilo",
+        	"usermail": "Murilo@sou.inteli.edu.br",
+        	"request_pedido": "Me traga apenas dez frutas"
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/8.6.1
+      - id: pair_d0d593e9f2c443489027a660ac046a66
+        name: ""
+        value: ""
+        description: ""
+    authentication: {}
+    metaSortKey: -1713638336736.75
+    isPrivate: false
+    pathParameters:
+      - name: id
+        value: "1"
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_570b96c691ca46e5a339d4d500eda042
+    parentId: wrk_784b161e1f2a4428b63f15bc7e148621
+    modified: 1715951070074
+    created: 1715950089485
+    url: "{{ _.baseUrl }}/pedidos/:id"
+    name: DELETE pedido by ID
+    description: ""
+    method: DELETE
+    body: {}
+    parameters: []
+    headers:
+      - name: User-Agent
+        value: insomnia/8.6.1
+    authentication: {}
+    metaSortKey: -1713638322551
+    isPrivate: false
+    pathParameters:
+      - name: id
+        value: "1"
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: env_6cbbd041b82444da86adaf3d568e9b8a
+    parentId: wrk_784b161e1f2a4428b63f15bc7e148621
+    modified: 1715950186923
+    created: 1715950089483
+    name: Base Environment
+    data:
+      baseUrl: http://localhost:5000
+    dataPropertyOrder:
+      "&":
+        - baseUrl
+    color: null
+    isPrivate: false
+    metaSortKey: 1713635910801
+    _type: environment
+  - _id: jar_e36eeb4d29244d28ae6d7772fc1fd7b6
+    parentId: wrk_784b161e1f2a4428b63f15bc7e148621
+    modified: 1715950089483
+    created: 1715950089483
+    name: Default Jar
+    cookies: []
+    _type: cookie_jar
+  - _id: spc_2c4aacf0b6184a84a56be2b8b094fdd3
+    parentId: wrk_784b161e1f2a4428b63f15bc7e148621
+    modified: 1715950089489
+    created: 1715950089488
+    fileName: API PRova
+    contents: ""
+    contentType: yaml
+    _type: api_spec
+  - _id: env_f60fa13c56214a3eb913c06e32396768
+    parentId: env_6cbbd041b82444da86adaf3d568e9b8a
+    modified: 1715950089483
+    created: 1715950089483
+    name: New Environment
+    data:
+      baseUrl: http://localhost:5000
+    dataPropertyOrder:
+      "&":
+        - baseUrl
+    color: null
+    isPrivate: true
+    metaSortKey: 1713636092758
+    _type: environment
